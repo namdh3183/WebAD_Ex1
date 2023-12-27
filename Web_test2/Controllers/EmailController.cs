@@ -33,6 +33,7 @@ namespace Web_test2.Controllers
             m.Body = Model.Body;
 
             mail.Send(m);
+            ViewBag.Notif = "Email sent !";
             return View("Index");
         }
     }

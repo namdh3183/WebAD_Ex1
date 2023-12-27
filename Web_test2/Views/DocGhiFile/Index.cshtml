@@ -15,7 +15,7 @@
     </div>
     <div class="mb-3">
         <label class="form-label">Điểm số</label>
-        <input type="number" class="form-control" name="diemso" value=@ViewBag.diemso>
+        <input type="number" class="form-control" name="diemso" value=@ViewBag.diemso min="1">
     </div>
     <button type="submit" class="btn btn-primary">Ghi file</button>
     <a href="@Url.Action("Open", "DocGhiFile")" type="submit" class="btn btn-primary">Đọc file</a>
