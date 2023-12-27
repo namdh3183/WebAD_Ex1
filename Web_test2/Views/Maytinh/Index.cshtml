@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<form action="/Maytinh/Calculate" method="post">
+    <div class="row">
+        <div class="col-2">
+            <label class="form-label">So A</label>
+            <input type="text" class="form-control" name="soA">
+        </div>
+        <div class="col-1">
+            <label class="form-label">Toan tu</label>
+            <select class="form-select" name="toantu">
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+            </select>
+        </div>
+        <div class="col-2">
+            <label class="form-label">So B</label>
+            <input type="text" class="form-control" name="soB">
+        </div>
+        <div class="col-1">
+            <button type="submit" class="btn btn-primary">=</button>
+        </div>
+        <div class="col-2">
+            <label class="form-label">Ket qua</label>
+            <input type="text" class="form-control" name="KetQua" value=@ViewBag.KetQua disabled>
+        </div>
+    </div>
+</form>

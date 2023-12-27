@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form action="/DocGhiFile/Save" method="post">
+    <div class="mb-3">
+        <label class="form-label">Mã SV</label>
+        <input type="text" class="form-control" name="masv" value=@ViewBag.masv>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Họ Tên SV</label>
+        <input type="text" class="form-control" name="hoten" value=@ViewBag.hoten>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Điểm số</label>
+        <input type="number" class="form-control" name="diemso" value=@ViewBag.diemso>
+    </div>
+    <button type="submit" class="btn btn-primary">Ghi file</button>
+    <a href="@Url.Action("Open", "DocGhiFile")" type="submit" class="btn btn-primary">Đọc file</a>
+    <div>
+        @ViewBag.KetQua
+    </div>
+</form>

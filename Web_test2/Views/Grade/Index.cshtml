@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<div>
+    <div class="row">
+        <div class="col-5">StudentName</div>
+        <div class="col-5">GradeName</div>
+        <div class="col-5">Score</div>
+    </div>
+    @foreach(var item in Model)
+     {
+        <div class="row">
+            <div class="col-5">@item.StudentName</div>
+            <div class="col-5">@item.GradeName</div>
+            <div class="col-5">@item.Score</div>
+        </div>
+     }
+</div>
